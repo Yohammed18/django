@@ -21,3 +21,31 @@ Django is a high-level Python web framework that encourages rapid development an
 ### 1. Install Django
 ```bash
 pip install django
+```
+
+### 2. Create a Django Project
+```bash
+django-admin startproject myproject
+cd myproject
+```
+
+### 3. Run the Development Server
+```bash
+python manage.py runserver
+```
+
+### 4. Create a Django App
+```bash
+python manage.py startapp myapp
+```
+
+### 5. Migrate Database Changes
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 6. Create a Superuser (Admin Account)
+```bash
+python manage.py createsuperuser
+```
