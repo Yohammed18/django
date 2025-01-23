@@ -1,5 +1,6 @@
 .venv
 myproject/db.sqlite3
 myproject/myproject/__pycache__
-myproject/posts/migrations
+
 myproject/posts/__pycache__
+myproject/posts/migrations
