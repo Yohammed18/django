@@ -6,10 +6,10 @@ Posts
 
 {% block content %}
 <section>
-    <h1>Posts</h1>
+    <h2>Posts</h2>
     {% for post in posts %}
     <article class="post">
-        <h2>{{post.title}}</h2>
+        <h1>{{post.title}}</h1>
         <p>{{post.date}}</p>
         <p>{{post.body}}</p>
     </article>

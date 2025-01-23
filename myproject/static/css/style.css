@@ -23,7 +23,10 @@ nav {
 main {
     flex-grow: 1;
     display: grid;
-    place-content: center;
+}
+
+p {
+    font-size: 18px;
 }
 
 a {
