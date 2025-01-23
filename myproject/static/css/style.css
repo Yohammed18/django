@@ -23,6 +23,7 @@ nav {
 main {
     flex-grow: 1;
     display: grid;
+    padding-left: 1rem;
 }
 
 p {
