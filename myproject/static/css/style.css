@@ -47,9 +47,9 @@ a:hover{
 
 
 .form-submit {
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 10px;
-    width: 125px;
+    width: 100px;
 }
 
 .form-with-validation {
