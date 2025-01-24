@@ -10,6 +10,9 @@
         Django App
         {% endblock %}
     </title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
@@ -17,16 +20,16 @@
 <body>
     <nav>
         <a href="/">
-            <span role="img" aria-label="Home">🏠</span>
+            <span role="img" aria-label="Home" title="Home">🏠</span>
         </a> |
         <a href="/about">
-            <span role="img" aria-label="About">😊</span>
+            <span role="img" aria-label="About" title="About">😊</span>
         </a> |
-        <a href="{% url 'posts:list' %}">
+        <a href="{% url 'posts:list' %}" title="Posts">
             <span role="img" aria-label="Slug">🗞️</span>
         </a> |
         <a href="{% url 'register:page' %}">
-            <span role="img" aria-label="register">👤</span>
+            <span role="img" aria-label="register" title="Register">👤</span>
         </a>
     </nav>
     <main>
