@@ -49,3 +49,6 @@ python manage.py migrate
 ```bash
 python manage.py createsuperuser
 ```
+
+## Details 
+***The requirements.txt file has all the Python package dependencies and their corresponding versions***
