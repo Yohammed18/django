@@ -33,7 +33,16 @@
         </a>|
         <a href="{% url 'register:login' %}">
             <span role="img" aria-label="login" title="Login">🔏</span>
-        </a>
+        </a> |
+        <a href="{% url 'posts:new-post' %}">
+            <span role="img" aria-label="New Post" title="New Post">🆕</span>
+        </a> |
+        <form action="{% url 'register:logout' %}" class="logout" method="post">
+            {% csrf_token %}
+            <button class="logout-button" aria-label="User Logout" title="User Logout">
+                👋
+            </button>
+        </form>
     </nav>
     <main>
         {% block content %}
