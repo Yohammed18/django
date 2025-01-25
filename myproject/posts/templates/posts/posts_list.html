@@ -5,7 +5,7 @@ Posts
 {% endblock %}
 
 {% block content %}
-<section>
+<section class="text-center">
     <h2>Posts</h2>
     {% for post in posts %}
     <article class="post">
@@ -14,7 +14,7 @@ Posts
                 {{post.title}}
             </a>
         </h1>
-        <p>{{post.date}}</p>
+        <p>{{post.date}} by <b>{{ post.author }}</b></p>
         <p>{{post.body}}</p>
     </article>
     {% endfor %}

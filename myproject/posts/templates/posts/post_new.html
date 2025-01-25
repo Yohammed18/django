@@ -7,6 +7,12 @@ New Post
 {% block content %}
 <section>
     <h1>New Post</h1>
-
+    <form action="{% url 'posts:new-post' %}" method="post" class="form-with-validation" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button class="form-submit">
+            Add Post
+        </button>
+    </form>
 </section>
 {% endblock %}

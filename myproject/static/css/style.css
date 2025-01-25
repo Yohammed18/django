@@ -42,7 +42,7 @@ a:hover{
 .banner {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 
@@ -50,6 +50,8 @@ a:hover{
     padding: 1rem;
     border-radius: 10px;
     width: 100px;
+    margin: 10px;
+    border: solid 10px whitesmoke;
 }
 
 .form-with-validation {
@@ -108,4 +110,9 @@ a:hover{
 
 .logout-button:hover {
     opacity: .85;
+}
+
+textarea {
+    display: block;
+    max-width: 500px;
 }
