@@ -9,7 +9,7 @@ User Login
     <h1>
         User Login
     </h1>
-    <form action="/register/login/" method="post" class="form-with-validation">
+    <form action="{% url 'register:login'%}" method="post" class="form-with-validation">
         {% csrf_token %}
         {{form}}
         {% if request.GET.next %}
